@@ -1,0 +1,38 @@
+@import './partials/reset';
+@import './partials/Font';
+@import './partials/colori';
+@import './partials/Mixins-generici';
+@import './partials/Bottoni';
+
+@import './partials/Spaziature';
+@import './partials/Animazioni';
+
+header img {
+  @include floating(5px 5px 15px 5px #000000);
+}
+header nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    li {
+      font-size: $font-size-3;
+      padding: 8rem;
+    }
+  }
+}
+
+main img {
+  @include floating();
+  box-shadow: 2px 2px 3px 5px #dbd0d0;
+}
+
+.container {
+  @include fadeInDown(30px, 1s, ease-in-out);
+}
+
+h1 {
+  @include title-big();
+}

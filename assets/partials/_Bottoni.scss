@@ -1,0 +1,14 @@
+$color: #0e61ff, #ff8700, #4caf50;
+$num: 1, 2, 3;
+
+$map-colo: (
+  1: #0e61ff,
+  2: #ff8700,
+  3: #4caf50,
+);
+
+@each $num, $color in $map-sizes {
+  .button-#{$num} {
+    background-color: $color;
+  }
+}

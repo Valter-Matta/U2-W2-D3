@@ -1,0 +1,10 @@
+$font-size-1: 1rem;
+$font-size-2: 1.4rem;
+$font-size-3: 2.2rem;
+
+@mixin title-big {
+  font-size: 3rem;
+  padding: $font-size-3;
+  color: $testo;
+  border: 2px solid black;
+}

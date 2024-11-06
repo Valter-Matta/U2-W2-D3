@@ -1,0 +1,21 @@
+@mixin floating($box: 5px 5px 15px 5px #000000) {
+  border-radius: 25px;
+  box-shadow: 5px 5px 15px 5px #000000;
+}
+
+@mixin fadeInDown($distance: 20px, $duration: 0.5s, $timing: ease) {
+  opacity: 0;
+  transform: translateY(-#{$distance});
+  animation: fadeInDown $duration $timing forwards;
+
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-#{$distance});
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
